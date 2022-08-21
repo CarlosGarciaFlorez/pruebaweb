@@ -113,8 +113,8 @@
             }
             gameInstance.progress.style.transform = `scaleX(${progress})`;
             if (progress === 1 && !gameInstance.removeTimeout) {
-                //gameInstance.removeTimeout = setTimeout(function () {
-                    //loader.style.display = "none";
+                gameInstance.removeTimeout = setTimeout(function () {
+                    loader.style.display = "none";
                     //WaitForZCVLoad();
                 }, 0); // optionally set a delay in here.
             }
