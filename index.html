@@ -109,7 +109,7 @@
             if (!gameInstance.progress) {
                 const progress = document.querySelector("#loader .progress");
                 //progress.style.display = "block";
-                //gameInstance.progress = progress.querySelector(".full");
+                gameInstance.progress = progress.querySelector(".full");
             }
             gameInstance.progress.style.transform = `scaleX(${progress})`;
             if (progress === 1 && !gameInstance.removeTimeout) {
